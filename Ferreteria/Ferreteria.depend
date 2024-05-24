@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1716504187 source:g:\tp-lab-2-\ferreteria\managerarchivos.cpp
+
+1716504108 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
+
+1716502891 source:g:\tp-lab-2-\ferreteria\producto.cpp
+	"Producto.h"
+
+1716505846 g:\tp-lab-2-\ferreteria\producto.h
+	<string>
+	<cstring>
+
+1716504599 source:g:\tp-lab-2-\ferreteria\main.cpp
+	<iostream>
+	"AppManager.h"
+
+1716506693 g:\tp-lab-2-\ferreteria\appmanager.h
+	"ProductManager.h"
+	"ArchivoProductos.h"
+
+1716506042 g:\tp-lab-2-\ferreteria\productmanager.h
+	"Producto.h"
+	"ArchivoProductos.h"
+
+1716506167 g:\tp-lab-2-\ferreteria\archivoproductos.h
+

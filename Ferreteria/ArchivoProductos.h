@@ -1,0 +1,8 @@
+#ifndef MANAGERARCHIVOS_H_INCLUDED
+#define MANAGERARCHIVOS_H_INCLUDED
+
+class ArchivoProductos{
+
+};
+
+#endif // MANAGERARCHIVOS_H_INCLUDED
