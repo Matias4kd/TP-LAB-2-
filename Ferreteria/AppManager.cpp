@@ -31,9 +31,6 @@ void AppManager::Menu(){
             system("pause");
             break;
 
-        case 3:
-            system("pause");
-            break;
         }
 
     }
