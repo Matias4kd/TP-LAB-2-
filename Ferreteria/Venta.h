@@ -6,6 +6,7 @@ class Venta{
 
     private:
 
+
     public:
 
 };
