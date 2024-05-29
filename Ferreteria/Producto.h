@@ -18,8 +18,8 @@ class Producto{
 
     public:
 
+        Producto(int id,string marca, float precio, string tipo, int stock, string proveedor, bool eliminado);
         Producto();
-
         void setId(int id);
         void setMarca(string marca);
         void setPrecio(float precio);

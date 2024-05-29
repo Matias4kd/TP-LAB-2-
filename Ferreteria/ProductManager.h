@@ -13,6 +13,10 @@ class ProductManager{
         void agregarProducto();
         void modificarProducto();
         void eliminarProducto();
+        void mostrarProducto(Producto registro);
+
+        ArchivoProductos _ap;
+
 
     public:
 

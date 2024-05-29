@@ -27,7 +27,7 @@ void AppManager::Menu(){
             break;
 
         case 2:
-
+            _rm.Menu();
             system("pause");
             break;
 
