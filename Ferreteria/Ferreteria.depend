@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1716504187 source:g:\tp-lab-2-\ferreteria\managerarchivos.cpp
 
-1717113670 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
+1717115016 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
 	<iostream>
 	"ProductManager.h"
 	"Venta.h"
