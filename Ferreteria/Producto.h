@@ -9,11 +9,11 @@ class Producto{
     private:
 
         int _id;
-        string _marca;
+        char _marca[50];
         float _precio;
-        string _tipo;
+        char _tipo[50];
         int _stock;
-        string _proveedor;
+        char _proveedor[50];
         bool _eliminado;
 
     public:

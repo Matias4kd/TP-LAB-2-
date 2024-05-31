@@ -23,6 +23,7 @@ void ProductManager :: Menu(){
         cout << "0- SALIR" << endl << endl;
         cout << "Opcion: ";
         cin >> option;
+        cout << endl;
 
         switch(option)
         {
@@ -81,9 +82,10 @@ void ProductManager::listarProductos(){
 
     _ap.leerTodos(productos, cantidad);
 
+    cout << "Listado de productos: " << endl;
     for(int i=0; i<cantidad; i++)
     {
-        if(!productos[i].getEliminado())
+        if(!(productos[i].getEliminado()))
         {
             cout << "--------------------------" << endl;
             mostrarProducto(productos[i]);
@@ -149,14 +151,14 @@ void ProductManager::agregarProducto(){
 }
 
 void ProductManager :: mostrarProducto(Producto registro){
-    
+
     if(!registro.getEliminado()){
         cout << "ID " << registro.getId() << endl;
         cout << "Producto: " << registro.getTipo() << endl;
         cout << "Marca: " << registro.getMarca() << endl;
-        cout << "Precio: " << registro.getPrecio();
-        cout << "Stock: " << registro.getStock();
-        cout << "Proveedor: " << registro.getProveedor();
+        cout << "Precio: " << registro.getPrecio() << endl;
+        cout << "Stock: " << registro.getStock() << endl;
+        cout << "Proveedor: " << registro.getProveedor() << endl;
     }
 }
 

@@ -1,5 +1,7 @@
 #include "Producto.h"
 #include "ArchivoProductos.h"
+#include<cstring>
+using namespace std;
 
 Producto :: Producto(int id,string marca, float precio, string tipo, int stock, string proveedor, bool eliminado)
 {
@@ -31,7 +33,9 @@ void Producto :: setId(int id)
 
 void Producto :: setMarca(string marca)
 {
-    _marca = marca;
+    if(marca.size()<= 50){
+        strcpy(_marca, marca.c_str());
+    }
 }
 
 void Producto :: setPrecio(float precio)
@@ -41,7 +45,9 @@ void Producto :: setPrecio(float precio)
 
 void Producto :: setTipo(string tipo)
 {
-    _tipo = tipo;
+    if(tipo.size()<= 50){
+        strcpy(_tipo, tipo.c_str());
+    }
 }
 
 void Producto :: setStock(int stock)
@@ -51,7 +57,9 @@ void Producto :: setStock(int stock)
 
 void Producto :: setProveedor(string proveedor)
 {
-    _proveedor = proveedor;
+    if(proveedor.size()<= 50){
+        strcpy(_proveedor, proveedor.c_str());
+    }
 }
 
 void Producto :: setEliminado(bool eliminado)
