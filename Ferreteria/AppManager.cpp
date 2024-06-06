@@ -36,6 +36,4 @@ void AppManager::Menu(){
     }
     while(option != 0);
 
-
-
 }

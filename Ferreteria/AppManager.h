@@ -6,7 +6,6 @@
 class AppManager{
 
     private:
-
         ProductManager _pm;
         ReportesManager _rm;
 
