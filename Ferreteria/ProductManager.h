@@ -3,6 +3,7 @@
 
 #include "Producto.h"
 #include "ArchivoProductos.h"
+#include "ArchivoVentas.h"
 
 class ProductManager{
 
@@ -20,6 +21,9 @@ class ProductManager{
         void mostrarProducto(Producto registro);
 
         ArchivoProductos _ap;
+        ArchivoVentas _av;
+
+
 
 
     public:

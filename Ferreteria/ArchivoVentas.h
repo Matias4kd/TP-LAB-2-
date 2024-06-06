@@ -1,8 +1,8 @@
-#ifndef MANAGERARCHIVOS_H_INCLUDED
-#define MANAGERARCHIVOS_H_INCLUDED
+#pragma once
 #include "Producto.h"
 #include"Venta.h"
 #include<iostream>
+
 using namespace std;
 
 class ArchivoVentas{
@@ -23,4 +23,4 @@ class ArchivoVentas{
 
 
 
-#endif // MANAGERARCHIVOS_H_INCLUDED
+

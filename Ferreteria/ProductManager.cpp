@@ -64,6 +64,7 @@ void ProductManager :: Menu(){
 
 void ProductManager::realizarVenta(){
 
+    
 }
 
 void ProductManager::menuListados(){
