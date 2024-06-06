@@ -114,21 +114,15 @@ Producto ArchivoProductos:: leer(int index){
 }
 
 void ArchivoProductos :: leerTodos(Producto registros[], int cantidad){
-    bool result;
     FILE *p;
-    Producto reg;
-    int aux = 0;
 
     p = fopen("productos.dat", "rb");
-
+   
     if(p == nullptr){
        return;
     }
-
-    while(fread(&reg, sizeof(Producto), 1, p)){
-        registros[aux] = reg;
-        aux++;
-    }
-
+   
+    fread(registros, sizeof(Producto), cantidad, p);
+   
     fclose(p);
 }

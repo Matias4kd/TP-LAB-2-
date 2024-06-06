@@ -8,9 +8,10 @@ using namespace std;
 class ArchivoVentas{
     private:
 
-
     public:
-
+        void leerVentas(Venta ventas[], int cantidad);
+        bool guardarVenta(Venta venta);
+        int getCatidadVentas();
 };
 
 

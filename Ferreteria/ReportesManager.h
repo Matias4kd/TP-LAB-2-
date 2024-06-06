@@ -7,7 +7,10 @@
 class ReportesManager{
 
     private:
-
+        void generarReporteSenamal();
+        void generarReporteMensual();
+        void generarReporteAnual();
+        void generarReporteHistorico();
 
     public:
 

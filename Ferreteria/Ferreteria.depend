@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1716504187 source:g:\tp-lab-2-\ferreteria\managerarchivos.cpp
 
-1717712257 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
+1717715322 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
 	<iostream>
 	"ProductManager.h"
 	"Venta.h"
@@ -19,7 +19,7 @@
 	<iostream>
 	"AppManager.h"
 
-1717008612 g:\tp-lab-2-\ferreteria\appmanager.h
+1717714120 g:\tp-lab-2-\ferreteria\appmanager.h
 	"ProductManager.h"
 	"ReportesManager.h"
 
@@ -27,18 +27,18 @@
 	"Producto.h"
 	"ArchivoProductos.h"
 
-1717016573 g:\tp-lab-2-\ferreteria\archivoproductos.h
+1717715321 g:\tp-lab-2-\ferreteria\archivoproductos.h
 	"Producto.h"
 	<iostream>
 
 1717113041 source:g:\tp-lab-2-\ferreteria\archivoproductos.cpp
 	"ArchivoProductos.h"
 
-1717009242 g:\tp-lab-2-\ferreteria\reportesmanager.h
+1717714550 g:\tp-lab-2-\ferreteria\reportesmanager.h
 	"Producto.h"
 	"ArchivoProductos.h"
 
-1717009289 source:g:\tp-lab-2-\ferreteria\appmanager.cpp
+1717713992 source:g:\tp-lab-2-\ferreteria\appmanager.cpp
 	"AppManager.h"
 	<iostream>
 
@@ -55,5 +55,13 @@
 
 1717009560 source:g:\tp-lab-2-\ferreteria\reportesmanager.cpp
 	"ReportesManager.h"
+	<iostream>
+
+1717715004 source:g:\tp-lab-2-\ferreteria\archivoventas.cpp
+	"ArchivoVentas.h"
+
+1717714898 g:\tp-lab-2-\ferreteria\archivoventas.h
+	"Producto.h"
+	"Venta.h"
 	<iostream>
 
