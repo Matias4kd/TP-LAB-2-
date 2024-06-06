@@ -8,7 +8,11 @@ class ProductManager{
 
     private:
         void realizarVenta();
-        void listarProductos();
+        void menuListados();
+        void listarTodosProductos();
+        void listarPorTipo();
+        void listarPorMarca();
+        void listarPorProveedor();
         void verificarStock();
         void agregarProducto();
         void modificarProducto();
