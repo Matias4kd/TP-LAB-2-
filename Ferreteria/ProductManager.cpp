@@ -250,7 +250,6 @@ void ProductManager::listarPorProveedor(){
     delete[] productos;
 }
 
-
 void ProductManager::verificarStock(){
     int idProducto, index;
     Producto producto;
@@ -276,7 +275,6 @@ void ProductManager::verificarStock(){
     }
 
 }
-
 
 void ProductManager::agregarProducto(){
 
@@ -409,7 +407,6 @@ void ProductManager::modificarProducto(){
         }
 
         if(modificar){
-            
 
             if(_ap.modificarRegistro(index, producto))
             {
