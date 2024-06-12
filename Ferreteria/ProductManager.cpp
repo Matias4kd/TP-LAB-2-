@@ -469,5 +469,3 @@ void ProductManager::eliminarProducto(){
         cout << "No se encuentra ese producto!" << endl;
     }
 }
-
-
