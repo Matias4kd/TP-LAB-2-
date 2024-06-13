@@ -28,7 +28,7 @@ void ProductManager :: Menu(){
         switch(option)
         {
         case 1:
-//            realizarVenta();
+            realizarVenta();
             system("pause");
             break;
 
@@ -64,6 +64,73 @@ void ProductManager :: Menu(){
 
 void ProductManager::realizarVenta(){
 
+    Venta venta;
+    bool carritoIncompleto = true;
+
+    Producto reg;
+    
+    
+    int id, cantidad, contador = 0, index;
+    
+    
+    cout << "Venta Nro:" << venta.getNroventa() << endl;
+    cout << "-------------------------------" << endl;
+    
+    while(carritoIncompleto && contador < 5){
+        system("cls");
+        cout << "Ingrese el id del producto: ";
+        cin >> id;
+        cout <<"ingrese la cantidad: ";
+        cin >> cantidad;
+
+        index = _ap.buscarPorID(id);
+        reg = _ap.leer(index);
+
+        if(!reg.getEliminado() || reg.getStock() >= cantidad){
+            venta.agregarProductos(reg, cantidad, contador);
+            contador++;
+            cout << "Desea agregar otro producto? (1- SI / 0- NO)";
+            cin >> carritoIncompleto;
+
+        }else{
+            cout << "PRODUCTO FUERA DE STOCK/ STOCK INSUFICIENTE" << endl;
+            mostrarProducto(reg);
+
+            cout << "Seleccione 1 para continuar o 0 para cancelar: ";
+            cin >> carritoIncompleto;
+        }     
+    }
+    int mp;
+
+    cout << "Seleccione metodo de pago (1- Efectivo / 2- Debito / 3- Credito): ";
+    cin >> mp;
+
+    while(mp < 1 || mp > 4){
+        cout << "Seleccione un metodo de pago valido (1- Efectivo / 2- Debito / 3- Credito):";
+        cin >> mp;
+    }
+    venta.setProdDiferentes(contador);
+    venta.setMetodoPago(mp);
+    venta.setMontoTotal();
+
+    bool confirmarVenta = false;
+
+    system("cls");
+    
+    cout << "CONFIRMACION VENTA NRO " << venta.getNroventa() << endl;
+    cout << "----------------------------" << endl;
+    venta.Mostrar();
+    cout << "Ingrese 1 para confirmar o 0 para cancelar: ";
+    cin >> confirmarVenta;
+
+    if(confirmarVenta){
+        if(_av.guardarVenta(venta)){
+            cout << "Venta realizada con exito!" << endl;
+        }
+    }else{
+        cout << "Operacion cancelada.";
+        system("pause");
+    }
     
 }
 
