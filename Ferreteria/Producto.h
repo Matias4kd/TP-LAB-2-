@@ -35,6 +35,7 @@ class Producto{
         int getStock();
         string getProveedor();
         bool getEliminado();
+        string toCSVString();
 
 };
 

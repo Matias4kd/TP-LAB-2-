@@ -107,3 +107,13 @@ bool Producto :: getEliminado()
 }
 
 #pragma endregion
+
+
+string Producto :: toCSVString(){
+
+    stringstream ss;
+    
+    ss << "," << _tipo << "," << _marca << "," << _precio;
+
+    return ss.str();
+}

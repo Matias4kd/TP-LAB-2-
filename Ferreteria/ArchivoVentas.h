@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ARCHIVOVENTA_H_INCLUDED
+#define ARCHIVOVENTA_H_INCLUDED
 #include "Producto.h"
 #include"Venta.h"
 #include<iostream>
@@ -15,7 +16,7 @@ class ArchivoVentas{
         int getCatidadVentas();
 };
 
-
+#endif // ARCHIVOVENTA_H_INCLUDED
 
 
 

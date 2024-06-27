@@ -2,7 +2,9 @@
 #define VENTA_H_INCLUDED
 #include "Producto.h"
 #include"Fecha.h"
-#include"ArchivoVentas.h"
+#include"ArchivoProductos.h"
+#include <sstream>
+
 
 class Venta{
 
@@ -14,7 +16,7 @@ class Venta{
         int _metodoPago;
         float _montoTotal;
         int _prodDiferentes;
-        ArchivoVentas _av;
+        
 
 
     public:
@@ -27,8 +29,13 @@ class Venta{
 
         int getMetodoPago();
         int getNroventa();
+        Fecha getFecha();
+        
+        void registrarVentaEnStock(Venta venta);
 
-        void Mostrar();
+        string toCSVString(Venta venta);
+
+        void Mostrar(Venta venta);
 
 
 };

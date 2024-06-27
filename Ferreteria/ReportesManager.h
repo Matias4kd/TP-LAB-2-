@@ -1,16 +1,18 @@
 #ifndef REPORTESMANAGER_H_INCLUDED
 #define REPORTESMANAGER_H_INCLUDED
 
-#include "Producto.h"
-#include "ArchivoProductos.h"
+#include "Venta.h"
+#include "ArchivoVentas.h"
 
 class ReportesManager{
 
     private:
-        void generarReporteSenamal();
+        void generarReporteSemanal();
         void generarReporteMensual();
         void generarReporteAnual();
         void generarReporteHistorico();
+        
+        ArchivoVentas _av;
 
     public:
 

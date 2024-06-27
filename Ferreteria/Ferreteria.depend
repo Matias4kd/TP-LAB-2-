@@ -1,17 +1,17 @@
 # depslib dependency file v1.0
 1716504187 source:g:\tp-lab-2-\ferreteria\managerarchivos.cpp
 
-1717716897 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
+1719456503 source:g:\tp-lab-2-\ferreteria\productmanager.cpp
 	<iostream>
 	"ProductManager.h"
 	"Venta.h"
 
-1717114748 source:g:\tp-lab-2-\ferreteria\producto.cpp
+1719455189 source:g:\tp-lab-2-\ferreteria\producto.cpp
 	"Producto.h"
 	"ArchivoProductos.h"
 	<cstring>
 
-1717708280 g:\tp-lab-2-\ferreteria\producto.h
+1719454101 g:\tp-lab-2-\ferreteria\producto.h
 	<string>
 	<cstring>
 
@@ -28,40 +28,49 @@
 	"ArchivoProductos.h"
 	"ArchivoVentas.h"
 
-1717716990 g:\tp-lab-2-\ferreteria\archivoproductos.h
+1719442729 g:\tp-lab-2-\ferreteria\archivoproductos.h
 	"Producto.h"
+	"Venta.h"
 	<iostream>
 
 1717715644 source:g:\tp-lab-2-\ferreteria\archivoproductos.cpp
 	"ArchivoProductos.h"
 
-1717714550 g:\tp-lab-2-\ferreteria\reportesmanager.h
-	"Producto.h"
-	"ArchivoProductos.h"
+1719458624 g:\tp-lab-2-\ferreteria\reportesmanager.h
+	"Venta.h"
+	"ArchivoVentas.h"
 
 1717713992 source:g:\tp-lab-2-\ferreteria\appmanager.cpp
 	"AppManager.h"
 	<iostream>
 
-1716509488 source:g:\tp-lab-2-\ferreteria\fecha.cpp
+1719441180 source:g:\tp-lab-2-\ferreteria\fecha.cpp
 	"Fecha.h"
 
-1716509418 g:\tp-lab-2-\ferreteria\fecha.h
+1719441174 g:\tp-lab-2-\ferreteria\fecha.h
+	<string>
 
-1716512111 g:\tp-lab-2-\ferreteria\venta.h
+1719459907 g:\tp-lab-2-\ferreteria\venta.h
 	"Producto.h"
+	"Fecha.h"
+	"ArchivoProductos.h"
+	<sstream>
 
-1716509267 source:g:\tp-lab-2-\ferreteria\venta.cpp
+1719462054 source:g:\tp-lab-2-\ferreteria\venta.cpp
 	"Venta.h"
+	"ArchivoVentas.h"
+	<ctime>
 
-1717009560 source:g:\tp-lab-2-\ferreteria\reportesmanager.cpp
+1719461963 source:g:\tp-lab-2-\ferreteria\reportesmanager.cpp
 	"ReportesManager.h"
 	<iostream>
+	<fstream>
+	<ctime>
 
 1717716874 source:g:\tp-lab-2-\ferreteria\archivoventas.cpp
 	"ArchivoVentas.h"
 
-1717717150 g:\tp-lab-2-\ferreteria\archivoventas.h
+1719457068 g:\tp-lab-2-\ferreteria\archivoventas.h
 	"Producto.h"
 	"Venta.h"
 	<iostream>
