@@ -10,7 +10,6 @@ class ArchivoVentas{
     private:
 
     public:
-        void getNroVentaNueva();
         void leerVentas(Venta ventas[], int cantidad);
         bool guardarVenta(Venta venta);
         int getCatidadVentas();
