@@ -65,6 +65,8 @@ void ReportesManager :: generarReporteHistorico(){
 
     if (archivoSalida.is_open()) {
             
+        archivoSalida << "Fecha" << "," << "Numero venta" << "," << "Metodo De pago" << "," << "Monto total" << "," << " Producto 1" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "," << " Producto 2" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad"<< "," << " Producto 3" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 4" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 5" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "\n";
+
         for(int i = 0; i < cant; i ++){
             archivoSalida << ventas[i].toCSVString(ventas[i]) << "\n";
         }
@@ -97,7 +99,9 @@ void ReportesManager :: generarReporteAnual(){
     ofstream archivoSalida("Reporte Anual ventas.csv");
 
     if (archivoSalida.is_open()) {
-            
+
+        archivoSalida << "Fecha" << "," << "Numero venta" << "," << "Metodo De pago" << "," << "Monto total" << "," << " Producto 1" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "," << " Producto 2" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad"<< "," << " Producto 3" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 4" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 5" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "\n";
+
         for(int i = 0; i < cant; i ++){
 
             if(ventas[i].getFecha().getAnio() == anioSeleccionado){
@@ -134,6 +138,8 @@ void ReportesManager :: generarReporteMensual(){
 
     if (archivoSalida.is_open()) {
             
+        archivoSalida << "Fecha" << "," << "Numero venta" << "," << "Metodo De pago" << "," << "Monto total" << "," << " Producto 1" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "," << " Producto 2" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad"<< "," << " Producto 3" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 4" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 5" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "\n";
+
         for(int i = 0; i < cant; i ++){
 
             if(ventas[i].getFecha().getAnio() == anioSeleccionado && ventas[i].getFecha().getMes() == mesSeleccionado){
@@ -172,7 +178,9 @@ void ReportesManager :: generarReporteSemanal(){
     ofstream archivoSalida("Reporte semanal ventas.csv");
 
     if (archivoSalida.is_open()) {
-            
+        
+        archivoSalida << "Fecha" << "," << "Numero venta" << "," << "Metodo De pago" << "," << "Monto total" << "," << " Producto 1" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "," << " Producto 2" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad"<< "," << " Producto 3" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 4" << "," << " Marca" << "," << "Precio Unitario" << "," << "Cantidad" << "," << " Producto 5" << "," << " Marca" << "," << "Precio Unitario" << "," <<"Cantidad" << "\n";
+
         for(int i = 0; i < cant; i ++){
 
             if(ventas[i].getFecha().getAnio() == anioSeleccionado && ventas[i].getFecha().getMes() == mesSeleccionado && (ventas[i].getFecha().getDia() >= inicioSemana && ventas[i].getFecha().getDia() < inicioSemana +7)){

@@ -75,3 +75,71 @@
 	"Venta.h"
 	<iostream>
 
+1718055794 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\appmanager.cpp
+	"AppManager.h"
+	<iostream>
+
+1718055794 c:\users\matias\desktop\tp-lab-2-\ferreteria\appmanager.h
+	"ProductManager.h"
+	"ReportesManager.h"
+
+1718055794 c:\users\matias\desktop\tp-lab-2-\ferreteria\productmanager.h
+	"Producto.h"
+	"ArchivoProductos.h"
+	"ArchivoVentas.h"
+
+1720099771 c:\users\matias\desktop\tp-lab-2-\ferreteria\producto.h
+	<string>
+	<cstring>
+
+1720099771 c:\users\matias\desktop\tp-lab-2-\ferreteria\archivoproductos.h
+	"Producto.h"
+	"Venta.h"
+	<iostream>
+
+1720099771 c:\users\matias\desktop\tp-lab-2-\ferreteria\venta.h
+	"Producto.h"
+	"Fecha.h"
+	"ArchivoProductos.h"
+	<sstream>
+
+1720099771 c:\users\matias\desktop\tp-lab-2-\ferreteria\fecha.h
+	<string>
+
+1720099771 c:\users\matias\desktop\tp-lab-2-\ferreteria\archivoventas.h
+	"Producto.h"
+	"Venta.h"
+	<iostream>
+
+1720099771 c:\users\matias\desktop\tp-lab-2-\ferreteria\reportesmanager.h
+	"Venta.h"
+	"ArchivoVentas.h"
+
+1718055794 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\archivoproductos.cpp
+	"ArchivoProductos.h"
+
+1718055794 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\archivoventas.cpp
+	"ArchivoVentas.h"
+
+1720099771 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\fecha.cpp
+	"Fecha.h"
+
+1716852515 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\main.cpp
+	<iostream>
+	"AppManager.h"
+
+1720099771 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\productmanager.cpp
+	<iostream>
+	"ProductManager.h"
+	"Venta.h"
+
+1720099771 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\producto.cpp
+	"Producto.h"
+	"ArchivoProductos.h"
+	<cstring>
+
+1720099771 source:c:\users\matias\desktop\tp-lab-2-\ferreteria\venta.cpp
+	"Venta.h"
+	"ArchivoVentas.h"
+	<ctime>
+
